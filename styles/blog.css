@@ -345,7 +345,7 @@ hr{
           .play-details {
               display: grid;
               grid-template-columns: repeat(1, 1fr);
-              margin-top: 100px;
+              margin-top: 90px;
               margin-left: -100px;
           }
     
