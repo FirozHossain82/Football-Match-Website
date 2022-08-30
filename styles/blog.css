@@ -11,3 +11,117 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* header style */
+/* header{
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+} */
+.header-container{
+    width: 100vw;
+    height: 646px;
+    margin-top: 50px;
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-bottom: 130px;
+    background: #161616;
+    border-radius: 20px;
+    
+    /* margin-left: 140px;
+    margin-top: 50px;
+    margin-right: 140px;
+    border-radius: 30px; */
+}
+.header-details{
+    /* background-color: #161616; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+.header-info{
+    flex-basis: 50%;
+    width: 40%;
+    margin-left: 100px;
+    /* margin-bottom: 70px; */
+   
+}
+.header-info .section-title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin: 25px 0;
+
+}
+.header-info p {
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 26px; */
+    color: #FFFFFF;
+    text-align: justify;
+}
+.header-info button {
+    display: inline-block;
+    width: 187px;
+    height: 56px;
+    background: #211f1f;
+    color: #15f4ee;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 30px;
+    border: 3px solid #15f4ee;
+    border-radius: 5px;
+    margin-top: 30px;
+    /* margin-bottom: 40px; */
+    
+
+}
+.button{
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1.5s;
+    
+}
+.button:hover{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee,0 0 5px #15f4ee;
+}
+
+@keyframes zoomin {
+    0%{
+        transform: scale(0.1);
+        
+    }
+    100%{
+        transform: scale(1);
+        
+    }
+}
+
+.header-banner img{
+    max-width: 100%;
+    /* padding: 20px 0; */
+    width: 581px;
+    height: 613px;
+    margin-top: 33px;
+}
+.header-banner{
+    width: 40%;
+    margin-left: 25px;
+    transition: width 1s, height 5s, transform 1s;
+}
+.header-details:hover .header-banner img{
+    animation: zoomin 1s linear;
+    animation-delay: .5s;
+}
+
+
+/* Players Blog Section */
+
