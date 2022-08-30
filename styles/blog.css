@@ -15,11 +15,8 @@ body{
 /* header style */
 /* header{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     
-    
-    
-} */
 .header-container{
     width: 100vw;
     height: 646px;
@@ -190,15 +187,18 @@ body{
     font-weight: 500;
     font-size: 16px;
     color: #161616;
+    margin-top: 10px;
 }
 .play-live-details p{
     font-weight: 600;
     font-size: 18px;
     color: #161616;
+    margin-top: 15px;
 }
 .icons-info{
     display: flex;
     margin-left: 30px;
+    margin-top: 30px;
 }
 .time-icon{
     display: flex;
@@ -231,4 +231,260 @@ span{
     /* visibility: hidden; */
 }
 
-/* footer section */
+/* footer styles */
+.footer{
+    width: 100vw;
+    text-align: center;
+    margin-top: 150px;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+.footer-heading{
+    padding-top: 150px;
+    font-weight: 500px;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+.footer-details{
+    
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    color: #B9B9B9;
+    font-weight: 500;
+    font-size: 16px;
+}
+.footer-details h3{
+    padding: 20px;
+}
+hr{  
+    width: 100vw;
+    border: 1px solid rgba(255, 255, 255, 0.1);;
+
+}
+.fa-brands{
+    padding: 22px;
+    color: peachpuff;
+    font-size: 20px;
+}
+.fa-facebook{
+    color: cornflowerblue;
+}
+.fa-instagram{
+    color: #DD0000;
+}
+.fa-youtube{
+    color: tomato;
+}
+
+
+/* Media Queries for mobile  */
+
+@media only  screen and (max-width:688px) {
+    html,body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    /* header section */
+    .header-details{
+        margin-left: 20px;
+        flex-direction: column;
+        display: inline-block;
+        width: 360px;
+        height: 672px;
+    }
+    .header-info{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .header-info .section-title{
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+    }
+    .header-info a button{
+        margin-left: 90px;
+    }
+    .header-banner{
+        margin-right: 0%;
+        width: 100%;
+    }
+    .header-banner img{
+        width: 250px;
+        height: 351px;
+        margin-top: 33px;
+    }
+    /* player section */
+          .upcoming-button-links {
+              display: grid;
+              grid-template-rows: repeat(1, 1fr);
+              width: 100%;
+              margin-left: -100px;
+              margin-top: -90px;
+              background-color: rgba(245, 245, 245, 0.144);
+          }
+    
+          .upcoming-button-links button {
+              background-color: white;
+              border: 2px solid rgba(104, 98, 98, 0.726);
+              border-radius: 10px;
+          }
+    
+          .upcoming-button-links button a {
+              color: black;
+          }
+    
+          .upcoming-button-links .blog-btn {
+              background-color: #460c3cbe;
+          }
+    
+          .play-details {
+              display: grid;
+              grid-template-columns: repeat(1, 1fr);
+              margin-top: 100px;
+              margin-left: -100px;
+          }
+    
+          .players-container {
+              flex-direction: column;
+          }
+
+          /* footer styles */
+            .footer {
+                margin-top: 30px;
+            }
+            
+            .footer-heading {
+                    padding-top: 0px;
+            }
+            
+            .footer-details {
+                flex-direction: column;
+                display: inline-block;
+                padding: 10%;
+            
+                }
+            
+            .footer-details h3 {
+                 padding: 0px;
+            
+                }
+                        
+}
+
+@media only screen and (min-width: 688px) and  (max-width:992px) {
+    tml,body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+    
+        /* header section */
+        .header-details {
+            margin-left: 20px;
+            width: 734px;
+            height: 448px;
+        }
+    
+        .header-info {
+            width: 60%;
+            margin-left: 50px;
+            margin-top: 0px;
+        }
+    
+        .header-info button {
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            margin-left: 0px;
+        }
+    
+        .header-banner{
+            margin-right: 10px;
+            width: 50%;
+        }
+    
+        .header-banner img {
+            width: 300px;
+            height: 441px;
+            margin-top: 7px;
+        }
+    
+        /* player section CSS */
+            .upcoming-button-links {
+            display: flex;
+            width: 100%;
+            margin-left: -100px;
+            margin-top: -90px;
+            background-color: rgba(245, 245, 245, 0.144);
+            column-gap: 20px;
+    
+        }
+    
+        .upcoming-button-links button {
+            background-color: white;
+            border: 2px solid rgba(104, 98, 98, 0.726);
+            border-radius: 10px;
+    
+        }
+    
+        .upcoming-button-links button a {
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+    
+        }
+    
+        .upcoming-button-links .blog-btn {
+            background-color: red;
+        }
+    
+        .play-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: -100px;
+            margin-left: -130px;
+        }
+    
+        .players-container {
+            flex-direction: column;
+        }
+    
+        .view-button button {
+            visibility: visible;
+            border: none;
+    
+        }
+    
+        /* footer CSS */
+        .footer {
+            margin-top: 30px;
+        }
+    
+        .footer-heading {
+            /* display: inline-block; */
+            padding-top: 0px;
+        }
+    
+        .footer-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding-bottom: 50px;
+            margin-left: 40px;
+            margin-right: 50px;
+        }
+    
+        .footer-details h3 {
+            padding: 0px;
+        }
+    
+        hr {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 690px;
+        }
+    
+    }
